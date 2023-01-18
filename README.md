@@ -116,7 +116,70 @@ echo "nameserver  8.8.8.8" >> /etc/resolv.conf && rm /etc/apt/sources.list.d/pve
 
 zm （来源qq）
 
+*阳 (来源支付宝)
+
+**鑫 (来源支付宝)
+
+**尧 (来源支付宝)
+
+*潋 (来源支付宝)
+
+**泽 (来源支付宝)
+
 # [版本说明]
+
+##### v2.3.5
+
+发布时间：2022.09.14
+
+new feature:
+
+* 修复docker无法安装的问题，更换alpine的安装源。
+
+##### v2.3.2
+
+发布时间：2022.07.14
+
+new feature:
+
+* 温度显示上方增加CPU频率显示。
+* add cpu frequency display.
+
+
+##### v2.3.1
+
+发布时间：2022.07.13
+
+* 调整省电模式powersave为conservative。
+* change cpufrequtils from 'powersave' to 'conservative'。
+
+
+##### v2.3.0
+
+发布时间：2022.05.30
+
+new feature:
+
+* 修复pve7（debian 11)后security更新源地址格式变动的影响。
+* fix pve7 (debian 11) security source address.
+
+* 添加pve7以上版本配置硬件直通里的参数`iommu=pt pcie_acs_override=downstream`
+* add pve7　grub config `iommu=pt pcie_acs_override=downstream`
+
+* 删除默认.vimrc中重复的`set termencoding=unix`
+* delete .vimrc duplicate termencoding setting `set termencoding=unix`
+
+* 增加去除订阅提示的修复
+* add reinstall proxmox-widget-toolkit to fix remove subscription failure.
+
+##### v2.2.9
+
+发布时间：2022.05.29
+
+new feature:
+
+* 增加常用工具下的自动扩展ROOT分区可用空间，比如有些用户使用dd等方式克隆系统盘，更换大硬盘还原镜像后可以一键扩展分区
+* add auto expand / partition size.
 
 ##### v2.2.8
 
